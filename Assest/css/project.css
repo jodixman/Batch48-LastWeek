@@ -1,0 +1,384 @@
+a {
+  text-decoration: none;
+}
+
+.body1 {
+  background-color: #e2e6eb;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+
+.header {
+  background-color: #f5f2f3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.header_grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_grp2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.header_lft {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+}
+
+.header_lft-img {
+  width: 4rem;
+}
+
+.header_lft-h1 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.header_lft-h1:hover {
+  color: #6b7280;
+}
+
+.header_lft-p {
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.5s;
+  color: black;
+}
+
+.header_lft-p:hover {
+  color: #8b9fb2;
+}
+
+.header_left-a {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #ffffff;
+  background-color: #111626;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.5s;
+  border: 1px solid #000000;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header_left-a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.pro {
+  max-width: 50rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: auto;
+}
+
+.pro_h1 {
+  font-size: 2.25rem; /* Set ukuran font sesuai dengan text-4xl */
+  text-align: center; /* Set alignment sesuai dengan text-center */
+  font-weight: bold; /* Set tebal font sesuai dengan font-bold */
+  margin-top: 1.25rem; /* Set margin atas sesuai dengan my-5 */
+  margin-bottom: 1.25rem; /* Set margin bawah sesuai dengan my-5 */
+}
+
+.pro_form {
+  display: flex; /* Set tampilan elemen sebagai flex */
+  flex-direction: column; /* Set arah flex menjadi column */
+  gap: 2rem; /* Set jarak antara elemen flex sesuai dengan gap-y-8 */
+}
+
+.pro_form_label {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.pro_formDate {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.pro_form-input {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.pro_formName {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.375rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.pro_fomr-textarea {
+  height: 10rem;
+  resize: none;
+  padding: 0.25rem 0.5rem;
+}
+
+.pro_form-tech {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 20rem;
+}
+
+.pro_form-techInp {
+  border-radius: 9999px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 200ms;
+}
+
+.pro_form-techInp:hover {
+  transform: scale(1.25);
+}
+
+.pro_form-tectLab {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.upld_lab {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.upld_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.375rem;
+  border: 1px solid #000;
+  gap: 5rem;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+}
+
+.upld_card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.upld_card-p {
+  text-color: #d1d5db;
+  border-radius: 0.375rem;
+}
+
+.crd {
+  background-color: #f1f8fe;
+}
+
+.crd_h1 {
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.crd_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 95rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.crd_card {
+  background-color: white;
+  width: 27rem;
+  max-height: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.crd_card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card_div {
+  padding-top: 1rem; /* Mengatur jarak padding atas sebesar 1rem */
+  padding-left: 1rem; /* Mengatur jarak padding kiri sebesar 1rem */
+  padding-right: 1rem;
+}
+
+.hid {
+  display: none;
+}
+
+.card_div1 {
+  background-color: #ef4444;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.375rem;
+}
+
+.card_div1-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.175rem;
+}
+
+.card_h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.card_p1 {
+  color: black;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.card_p2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  width: 22rem;
+}
+
+.card_btn {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: #111626;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.5s;
+  border: 2px solid #000;
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex: 1;
+}
+
+.card_btn:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.card_ic {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card_ictx {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.card_btn1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+button {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: white;
+  background-color: #111626;
+  border-radius: 9999px;
+  text-align: center;
+  transition-duration: 500ms;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+button:focus {
+  outline: none;
+}
+
+/*=========== HOF ===========*/
+.projecthof {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projecthof_h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.projecthof_card {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem; /* Equivalent to gap-x-5 */
+  font-weight: bold;
+  flex-wrap: wrap;
+  row-gap: 2.5rem; /* Equivalent to gap-y-10 */
+  align-items: center;
+  justify-content: center;
+}

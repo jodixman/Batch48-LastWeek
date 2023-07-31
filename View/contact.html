@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Assest/css/contact.css">
+    <link rel="stylesheet" href="../Assest/css/darkmode.css">
+    <link rel="stylesheet" href="../Assest/css/responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="body1 dark-mode">
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="../Assest/image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="/" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="/project" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="/testimonial" class="header_lft-p hidden md:flex">Testimonal</a>
+                <a href="/bootstrap" class="header_lft-p hidden md:flex text-[#7231F9] font-bold pl-10">BOOTSTRAP</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="/contact" class="header_left-a hidden md:flex">Contact Me</a>   
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="/">Home</a></li>
+            <li class="burger_li"><a href="/project">My Project</a></li>
+            <li class="burger_li"><a href="/contact">Contact</a></li>
+            <li class="burger_li"><a href="/testimonial">Terimonials</a></li>
+            <li class="burger_li text-[#7231F9] font-bold "><a href="/bootstrap">BOOTSTRAP</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="section px-5">
+        <form class="form1">
+            <h1 class="form1_h1 r">GET IN TOUCH</h1>    
+    
+            <div class="form_1-list">
+                <label class="form_1-lab r">Name</label>
+                <input type="text" class="form_1-lab1" id="input-name"/>
+            </div>
+        
+            <div class="form_1-list">
+                <label class="form_1-lab r">Email</label>
+                <input type="email" class="form_1-lab1" id="input-email"/>
+            </div>
+        
+            <div class="form_1-list">
+                <label class="form_1-lab r">Phone Number</label>
+                <input type="text" class="form_1-lab1" id="input-number"/>
+            </div>
+        
+            <div class="form_1-list">
+                <label class="form_1-lab r">Subject</label>
+                <select class="form_1-lab11" id="input-subject">
+                    <option value="">Select.....</option>
+                    <option value="frontend">Frontend Development</option>
+                    <option value="backend">Backend Development</option>
+                    <option value="fullstack">Fullstack Development</option>
+                </select>
+            </div>
+        
+            <div class="form_1-list ">
+                <label class="form_1-msg r">Your Message</label>
+                <textarea class="form_1-txt" id="input-message"></textarea>
+            </div>
+            
+            <div class="flex justify-end">
+                <button type="submit" onclick="submitData(event)" class="bg-black px-2 py-2 text-white">Contact Me</button>
+            </div>
+        </form>
+    </div>
+    <script src="../Assest/js/script.js"></script>
+    <script src="../Assest/js/darkmode.js"></script>
+    <script src="../Assest/js/responsive.js"></script>
+</body>
+</html>

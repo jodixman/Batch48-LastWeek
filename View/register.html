@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Assest/css/darkmode.css">
+    <link rel="stylesheet" href="../Assest/css/project.css">
+    <link rel="stylesheet" href="../Assest/css/responsive.css">
+    <link rel="stylesheet" href="../Assest/css/golang.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Document</title>
+</head>
+<body class="body1 dark-mode">
+
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="../Assest/image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="/" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="/project" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="/testimonial" class="header_lft-p hidden md:flex">Testimonal</a>
+                <a href="/bootstrap" class="header_lft-p hidden md:flex text-[#7231F9] font-bold pl-10">BOOTSTRAP</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="/contact" class="header_left-a hidden md:flex">Contact Me</a>   
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="/">Home</a></li>
+            <li class="burger_li"><a href="/project">My Project</a></li>
+            <li class="burger_li"><a href="/contact">Contact</a></li>
+            <li class="burger_li"><a href="/testimonial">Terimonials</a></li>
+            <li class="burger_li text-[#7231F9] font-bold "><a href="/bootstrap">BOOTSTRAP</a></li>
+            
+        </ul>
+    </div>
+
+        <!------------- ALERTT START ------------->
+        {{if .FlashMessage}}
+        {{if .FlashStatus}}
+            <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md  absolute -translate-x-1/2 left-1/2" role="alert">
+                <div class="flex">
+                    <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                    <div>
+                        <p class="font-bold mr-10">{{.FlashMessage}}</p>
+                    </div>
+                    <button id="close-success" class="ml-auto px-2 text-4xl font-bold">&times;</button>
+                </div>
+            </div>
+        {{else}}
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded absolute -translate-x-1/2 left-1/2" role="alert">
+                <div class="flex ">
+                    <strong class="font-bold mr-10">{{.FlashMessage}}</strong>
+                    <button id="close-error" class="ml-auto px-2   text-xl font-bold ">&times;</button>
+                </div>
+            </div>
+        {{end}}
+    {{end}}
+    
+        <!------------- ALERTT END ------------->
+
+
+
+        
+        <!--MyProject START-->
+        <div class="pro px-5">
+        <h1 class="pro_h1 r">REGISTER</h1>
+
+        <form class="pro_form" action="/register" method="POST">
+            <!--NAME START-->
+            <div class="flex_col ">
+                <label class="pro_form_label r" for="inputName">NAME</label>
+                <input type="text" name="inputName" class="pro_formName" autofocus/>
+            </div>
+            <!--NAME END-->
+
+            <!--EMAIL START-->
+            <div class="flex_col ">
+                <label class="pro_form_label r" for="inputEmail">EMAIL</label>
+                <input type="email" name="inputEmail" class="pro_formName" autofocus/>
+            </div>
+            <!--EMAIL END-->
+
+            <!--PASSWORD START-->
+            <div class="flex_col ">
+                <label class="pro_form_label r" for="inputPassword">PASSWORD</label>
+                <input type="password" name="inputPassword" class="pro_formName" autofocus/>
+            </div>
+            <!--PASSWORD END-->
+       
+        
+            <div class="flex flex-row justify-end">
+                <button class="px-6 py-1 text-white bg-[#111626] rounded-full text-center hover:bg-white hover:text-black border border-black transition duration-500 my-5 text-lg font-bold hover:shadow-lg bt" >REGISTER</button>
+            </div>
+        </form>
+        
+    </div>
+    <!--MyProject END-->
+
+    <script src="../Assest/js/project.js"></script>
+    <script src="../Assest/js/darkmode.js"></script>
+    <script src="../Assest/js/responsive.js"></script>
+    <script src="../Assest/js/Golang.js"></script>
+</body>
+</html>

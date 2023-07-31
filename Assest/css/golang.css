@@ -1,0 +1,12 @@
+#close-success,
+#close-error {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

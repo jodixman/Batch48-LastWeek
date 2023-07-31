@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Document</title>
+</head>
+
+<body class="body1 dark-mode">
+
+    <nav class="navbar navbar-expand-md bg-white px-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../image/logoDmb.png" class="header_lft-img" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactBoot.html">My Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../index.html">VANILA CSS</a>
+                    </li>
+                </ul>
+                <button class="btn btn-dark" type="button" onclick="location.href='contactBoot.html'">Contact Me</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--MyProject START-->
+    <div class="pro px-5">
+        <h1 class="pro_h1 r">ADD MY PROJECT</h1>
+        <form class="pro_form" onsubmit="ProjectSubmit(event)">
+            <div class="mb-3">
+                <label class="pro_form_label r" for="input-porject-title">Project Name</label>
+                <input type="text" id="input-porject-title" class="pro_formName form-control" autofocus />
+            </div>
+
+            <!--Date Start-->
+            <div class="pro_formDate">
+                <!--StartDate-->
+                <div class="mb-3">
+                    <label for="input-project-startdate" class="pro_form_label r">Start Date</label>
+                    <input type="date" id="input-project-startdate" class="pro_form-input form-control" />
+                </div>
+                <!--EndDate-->
+                <div class="mb-3">
+                    <label for="input-project-enddate" class="pro_form_label r">End Date</label>
+                    <input type="date" id="input-project-enddate" class="pro_form-input form-control" />
+                </div>
+            </div>
+            <!--Date END-->
+
+            <!--Description Start-->
+            <div class="mb-3">
+                <label for="input-description" class="pro_form_label r">Description</label>
+                <textarea id="input-description" class="pro_fomr-textarea form-control"></textarea>
+            </div>
+            <!--Description End-->
+
+            <!--Tech Start-->
+            <div>
+                <h1 class="pro_form_label r">Technologi</h1>
+
+                <div class="pro_form-tech">
+
+                    <div>
+                        <input type="checkbox" id="input-node" class="pro_form-techInp form-check-input" />
+                        <label for="input-node" class="pro_form-tectLab form-check-label r">Node Js</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="input-react" class="pro_form-techInp form-check-input" />
+                        <label for="input-react" class="pro_form-tectLab form-check-label r">React Js</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="input-vue" class="pro_form-techInp form-check-input" />
+                        <label for="input-vue" class="pro_form-tectLab form-check-label r">Vue Js</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="input-angular" class="pro_form-techInp form-check-input" />
+                        <label for="input-angular" class="pro_form-tectLab form-check-label r">Angular</label>
+                    </div>
+                </div>
+            </div>
+            <!--Tech End-->
+
+            <!--Uploud Start-->
+            <div>
+                <label for="input-blog-image" class="upld_lab">Upload Image</label>
+                <label for="input-blog-image" class="visually-hidden">Choose File</label>
+                <input type="file" id="input-blog-image" class="form-control" />
+            </div>
+            
+            
+            
+            <!--Uploud End-->
+            <div class="flex flex-row justify-end">
+                <button class="bt btn-dark">submit</button>
+                <button id="clear-button" type="button" class="bt btn-dark">Clear</button>
+
+            </div>
+        </form>
+
+    </div>
+    <!--MyProject END-->
+
+
+    <!-- TESTER PROJECT -->
+    <div class="cr crd">
+        <h1 class="crd_h1">MY PROJECT</h1>
+
+        <div class="crd_grid flex">
+            <div class="crd_card" id="hid">
+                <a href="InProject.html">
+                    <div class="card_div card">
+                        <div class="card_div1">
+                            <img src="../image/photo.jpeg" alt="photo" class="card_div1-img card-img-top">
+                        </div>
+                        <h1 class="card_h1 card-title">Dumbways Mobile App - 2021</h1>
+                        <p class="card_p1 card-text">12-2-2000 Sampai 12-2-200</p>
+                        <p class="card_p2 card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores reprehenderit unde, adipisci fuga impedit vero doloremque praesentium rem amet.</p>
+                        <div class="card_ic">
+                            <i class="fa-brands fa-react card_ictx"></i>
+                            <i class="fa-brands fa-angular card_ictx"></i>
+                            <i class="fa-brands fa-vuejs card_ictx"></i>
+                            <i class="fa-brands fa-node-js card_ictx"></i>
+                        </div>
+
+                        <div class="card_btn1">
+                            <button class="card_btn btn btn-primary">Edit</button>
+                            <button class="card_btn btn btn-danger" id="delete">Delete</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <a href="InProject.html" class="crd_grid card_push" id="test2"></a>
+
+
+    </div>
+
+    <p class="hello"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/projectBot.js"></script>
+</body>
+
+</html>

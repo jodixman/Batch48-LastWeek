@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Assest/css/darkmode.css">
+    <link rel="stylesheet" href="../Assest/css/project.css">
+    <link rel="stylesheet" href="../Assest/css/style.css">
+    <link rel="stylesheet" href="../Assest/css/responsive.css">
+    <link rel="stylesheet" href="../Assest/css/testi.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Document</title>
+</head>
+<body class="body1 dark-mode">
+
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="../Assest/image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="/" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="/project" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="/testimonial" class="header_lft-p hidden md:flex">Testimonal</a>
+                <a href="/bootstrap" class="header_lft-p hidden md:flex text-[#7231F9] font-bold pl-10">BOOTSTRAP</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="/contact" class="header_left-a hidden md:flex">Contact Me</a>   
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="/">Home</a></li>
+            <li class="burger_li"><a href="/project">My Project</a></li>
+            <li class="burger_li"><a href="/contact">Contact</a></li>
+            <li class="burger_li"><a href="/testimonial">Terimonials</a></li>
+            <li class="burger_li text-[#7231F9] font-bold "><a href="/bootstrap">BOOTSTRAP</a></li>
+            
+        </ul>
+    </div>
+
+
+
+    <!----------- PROJECT START  ------------->
+    <div class="pt-20">
+        <h1 class="inproject r">My Testimonials</h1>
+    </div>
+
+    <div class="projecthof">
+        <h1 class="projecthof_h1 r">Rating By Star</h1>
+        
+        <div class="projecthof_card" >
+
+            <h1 class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer shadow-md hover:shadow-xl group " onclick="allRating()">ALL</h1>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer shadow-md hover:shadow-xl group " onclick="filterRating(1)">
+                <span>1</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 group-hover:animate-bounce "></i>
+            </div>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer shadow-md hover:shadow-xl group " onclick="filterRating(2)">
+                <span>2</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 group-hover:animate-bounce "></i>
+            </div>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer shadow-md hover:shadow-xl group" onclick="filterRating(3)">
+                <span>3</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 group-hover:animate-bounce "></i>
+            </div>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer shadow-md hover:shadow-xl group" onclick="filterRating(4)">
+                <span>4</span>
+                <i class="fa-solid fa-star group-hover:text-yellow-500 transition duraiton-600 group-hover:animate-bounce "></i>
+            </div>
+
+            <div class="flex flex-row items-center bg-black text-white gap-x-2 px-2 py-2 hover:bg-white hover:text-black transition duration-500 cursor-pointer shadow-md hover:shadow-xl group" onclick="filterRating(5)">
+                <span>5</span>
+                <i class="fa-solid fa-star  transition duraiton-600 group-hover:text-yellow-500 group-hover:animate-bounce"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+    <a href="../Assest/InProject.html" class="crd_grid inproject1 flex-wrap" id="text2"></a>
+
+
+
+
+
+
+  
+    
+    
+<!-- HTML -->
+
+
+<!------------------ VIDEO START ---------------->
+
+
+<!------------------ VIDEO END ---------------->
+
+
+
+
+
+<!-- ... Add more card elements as needed ... -->
+
+<script>
+    function toggleImageAndVideo(hidId, imageId, videoId) {
+        const hid = document.getElementById(hidId);
+        const image = document.getElementById(imageId);
+        const video = document.getElementById(videoId);
+
+        hid.addEventListener('mouseenter', function() {
+            image.style.display = 'none';
+            video.style.display = 'block';
+            video.play();
+        });
+
+        hid.addEventListener('mouseleave', function() {
+            video.pause();
+            video.style.display = 'none';
+            image.style.display = 'block';
+        });
+    }
+
+    // Loop through the card IDs from hid1 to hid100
+    for (let i = 1; i <= 100; i++) {
+        const hidId = `hid${i}`;
+        const imageId = `myImage${i}`;
+        const videoId = `myVideo${i}`;
+
+        toggleImageAndVideo(hidId, imageId, videoId);
+    }
+</script>
+
+    
+
+
+  <!------------------ VIDEO END ---------------->
+    
+
+    
+    
+
+    
+    <!----------- PROJECT END  ------------->
+    <script src="../Assest/js/darkmode.js"></script>
+    <script src="../Assest/js/responsive.js"></script>
+    <script src="../Assest/js/Ajax.js"></script>
+</body>
+</html>

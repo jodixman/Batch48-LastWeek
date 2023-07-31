@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Assest/css/darkmode.css">
+    <link rel="stylesheet" href="../Assest/css/InProject.css">
+    <link rel="stylesheet" href="../Assest/css/responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="body1 dark-mode">
+    
+    <!---------------- GOLANG -------------->
+    
+
+    
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="../Assest/image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="/" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="/project" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="/testimonial" class="header_lft-p hidden md:flex">Testimonal</a>
+                <a href="/bootstrap" class="header_lft-p hidden md:flex text-[#7231F9] font-bold pl-10">BOOTSTRAP</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="/contact" class="header_left-a hidden md:flex">Contact Me</a>   
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="/">Home</a></li>
+            <li class="burger_li"><a href="/project">My Project</a></li>
+            <li class="burger_li"><a href="/contact">Contact</a></li>
+            <li class="burger_li"><a href="/testimonial">Terimonials</a></li>
+            <li class="burger_li text-[#7231F9] font-bold "><a href="/bootstrap">BOOTSTRAP</a></li>
+            
+        </ul>
+    </div>
+
+
+
+    {{ .Id }}
+
+    <!--Hero START-->
+    <div class="hero px-5">
+        <h1 class="hero2 r">{{ .Blog.Title }}</h1>
+        <h1 class="hero2 r">{{ .Blog.Author }}</h1>
+        <div class="hero3 flex md:flex-row flex-col flex ">
+            <!--Image-->
+            <div class="md:w-[46rem] md:h-[30rem] w-auto">
+                <img src="../Assest/image/photo.jpeg" alt="photo" class="hero4_img flex-wrap flex">
+            </div>
+
+            <!--Text-->
+            <div class="heroText py-10 md:py-0 ">
+
+                <!--Str-->
+                <!--Rond1-->
+                <div class="">
+                    <h1 class="heroText1 r">Duration</h1>
+                    <div class="heroText2 r">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>{{ .Blog.PostDate }}</p>
+                    </div>
+
+                    <div class="heroText3 r">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>1 month</p>
+                    </div>
+                </div>
+                <!--Rond2-->
+                <div>
+                    <h1 class="heroText1 r">Technology</h1>
+                    <div class="heroText4">
+                        <div class="heroText3 r">
+                            <i class="fa-brands fa-react r"></i>
+                            <p class="r">React Js</p>
+                        </div>
+                        <div class="heroText3 r">
+                            <i class="fa-brands fa-vuejs"></i>
+                            <p>Vue Js</p>
+                        </div>
+                        <div class="heroText3 r">
+                            <i class="fa-brands fa-angular"></i>
+                            <p>angular</p>
+                        </div>
+                        <div class="heroText3 r">
+                            <i class="fa-brands fa-node-js"></i>
+                            <p>Node JS</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Str/-->
+            </div>
+
+        </div>
+        <div>
+        <!-- botom -->
+        <p class="padd r">{{ .Blog.Content }}</p>
+        </div>
+    </div>
+        <script src="../Assest/js/darkmode.js"></script>
+        <script src="../Assest/js/responsive.js"></script>
+</body>
+</html>

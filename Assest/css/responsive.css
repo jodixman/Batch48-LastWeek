@@ -1,0 +1,66 @@
+.merah {
+  display: none;
+}
+
+.toggle-menu.active ~ .merah {
+  display: block;
+  background-color: red; /* Add desired background color */
+}
+
+.burger {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  width: 15rem;
+  height: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  right: 0;
+  position: absolute;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.burger_ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2rem;
+  gap: 1.25rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.burger_li {
+  cursor: pointer;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.burger_li:hover {
+  opacity: 0.5;
+}
+
+.card_push {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .card_push {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .card_push {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

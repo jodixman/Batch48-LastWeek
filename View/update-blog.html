@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Assest/css/darkmode.css">
+    <link rel="stylesheet" href="../Assest/css/project.css">
+    <link rel="stylesheet" href="../Assest/css/responsive.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Update Blog</title>
+</head>
+<body class="body1 dark-mode">
+
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="../Assest/image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="/" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="/project" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="/testimonial" class="header_lft-p hidden md:flex">Testimonal</a>
+                <a href="/bootstrap" class="header_lft-p hidden md:flex text-[#7231F9] font-bold pl-10">BOOTSTRAP</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="/contact" class="header_left-a hidden md:flex">Contact Me</a>   
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="/">Home</a></li>
+            <li class="burger_li"><a href="/project">My Project</a></li>
+            <li class="burger_li"><a href="/contact">Contact</a></li>
+            <li class="burger_li"><a href="/testimonial">Terimonials</a></li>
+            <li class="burger_li text-[#7231F9] font-bold "><a href="/bootstrap">BOOTSTRAP</a></li>
+            
+        </ul>
+    </div>
+
+        
+        <!--MyProject START-->
+        <div class="pro px-5">
+        <h1 class="pro_h1 r">Update Blog</h1>
+        <form class="pro_form" action="/update-blog" method="POST">
+            <!--EPS14 4.4 ngoper dari golang-->
+            <input type="hidden" name="id" value="{{.Id}}" class="pro_formName" />
+            <div class="flex_col ">
+                <label class="pro_form_label r" for="input-porject-title">Project Name</label>
+                <input type="text" name="input-porject-title" class="pro_formName" autofocus/>
+            </div>
+        
+            <!--Date Start-->
+            <div class="pro_formDate">
+                <!--StartDate-->
+                <div class="flex_col ">
+                    <label for="input-project-startdate" class="pro_form_label r">Start Date</label>
+                    <input type="date" name="input-project-startdate" class="pro_form-input"/>
+                </div>
+                <!--EndDate-->
+                <div class="flex_col ">
+                    <label for="input-project-enddate" class="pro_form_label r">End Date</label>
+                    <input type="date" name="input-project-enddate" class="pro_form-input"/>
+                </div>
+            </div>
+            <!--Date END-->
+        
+            <!--Description Start-->
+            <div class="flex_col ">
+                <label for="input-description" class="pro_form_label r">Description</label>
+                <textarea name="input-description" class="pro_fomr-textarea"></textarea>
+            </div>
+            <!--Description End-->
+        
+            <!--Tech Start-->
+            <div>
+                <h1 class="pro_form_label r">Technologi</h1>
+        
+                <div class="pro_form-tech">
+
+                        <div>
+                            <input type="checkbox" id="input-node" class="pro_form-techInp" />
+                            <label for="input-node" class="pro_form-tectLab r">Node Js</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="input-react" class="pro_form-techInp"/>
+                            <label for="input-react" class="pro_form-tectLab r">React Js</label>
+                        </div>
+        
+                        <div>
+                            <input type="checkbox" id="input-vue" class="pro_form-techInp"/>
+                            <label for="input-vue" class="pro_form-tectLab r">Vue Js</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="input-angular" class="pro_form-techInp"/>
+                            <label for="input-angular" class="pro_form-tectLab r">Angular</label>
+                        </div>
+                </div>
+            </div>
+            <!--Tech End-->
+        
+            <!--Uploud Start-->
+            <div >
+                <label for="input-blog-image" class="upld_lab r">Upload Image</label>
+                <div class="">
+                    <label for="input-blog-image">
+                        <div class="upld_card">
+                            <div class="flex">
+                                <p class="upld_card-p bg-slate-300 px-5 py-5">Attach File</p>
+                                <p class="flex items-center text-3xl pl-5 text3"></p>
+                            </div>
+                            <img src="image/file.png" alt="file" class=""/>
+                        </div>
+                    </label>
+                    <input type="file" name="input-blog-image" hidden />
+                </div>
+            </div>
+            <!--Uploud End-->
+            <div class="flex flex-row justify-end">
+                <button class="px-6 py-1 text-white bg-[#111626] rounded-full text-center hover:bg-white hover:text-black border border-black transition duration-500 my-5 text-lg font-bold hover:shadow-lg bt" >submit</button>
+                <button id="clear-button" type="button" class="px-6 py-1 text-white bg-[#111626] rounded-full text-center hover:bg-white hover:text-black border border-black transition duration-500 my-5 text-lg font-bold hover:shadow-lg bt">Clear</button>
+
+            </div>
+        </form>
+        
+    </div>
+    <!--MyProject END-->
+
+        <p class="hello"></p>
+
+    <script src="../Assest/js/project.js"></script>
+    <script src="../Assest/js/darkmode.js"></script>
+    <script src="../Assest/js/responsive.js"></script>
+</body>
+</html>

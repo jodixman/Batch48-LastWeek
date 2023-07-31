@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/project.css">
+
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="body1 dark-mode">
+    <nav class="navbar navbar-expand-md bg-white px-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../image/logoDmb.png" class="header_lft-img" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projectBoot.html">My Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="../index.html">VANILA CSS</a>
+                    </li>
+                </ul>
+                <button class="btn btn-dark" type="button" onclick="location.href='contactBoot.html'">Contact Me</button>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <!--/HERO-->
+    <div class="container mt-5 bg-white shadow py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="hero_conta p-5">
+                    <h1 class="hero_conta-h1">Hi Welcome to my hut</h1>
+                    <p class="hero_conta-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident possimus quidem dolore rerum, est vitae dicta dignissimos, aperiam reprehenderit fugiat odio iusto totam praesentium officia tempore pariatur corporis, dolores nisi et? Deserunt, quo. Molestias ipsam velit fugiat inventore accusamus. Accusantium aliquid iste sint quae cum eum reprehenderit, ab, earum veniam debitis expedita perferendis odio ex. Quaerat ullam doloremque iste corrupti.</p>
+                    <div class="hero_conti">
+                        <a href="contact.html" class="hero_contia">Contact</a>
+                        <div href="" class="home_a1">
+                            <a class="home_a1p text-dark">Download CV</a>
+                            <i class="fa-solid fa-download home_a1i"></i>
+                        </div>
+                    </div>
+                    <!-- Icons -->
+                    <div class="icons_container">
+                        <div class="rounded_icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="rounded_icon"><i class="fab fa-instagram"></i></div>
+                        <div class="rounded_icon1"><i class="fab fa-facebook-f"></i></div>
+                        <div class="rounded_icon"><i class="fab fa-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="../image/cv.jpg" class="card_image-img">
+                    </div>
+                    <div class="card_p">
+                        <h1>Setiawan Jodi</h1>
+                        <p class="font-bold">Fullstack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HERO-->
+
+    <!--MY PROJECT-->
+    <div class="container mt-5">
+        <h1 class="crd_h1">MY PROJECT</h1>
+        <div class="row row-cols-1 row-cols-md-3 gap-x-5">
+            <div class="col">
+                <div class="crd_card" id="hid">
+                    <a href="InProject.html">
+                        <div class="card_div">
+                            <div class="card_div1">
+                                <img src="../image/photo.jpeg" alt="photo" class="card_div1-img">
+                            </div>
+                            <h1 class="card_h1">Dumbways Mobile App - 2021</h1>
+                            <p class="card_p1">12-2-2000 Sampai 12-2-200</p>
+                            <p class="card_p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores reprehenderit unde, adipisci fuga impedit vero doloremque praesentium rem amet.</p>
+                            <div class="card_ic">
+                                <i class="fab fa-react card_ictx"></i>
+                                <i class="fab fa-angular card_ictx"></i>
+                                <i class="fab fa-vuejs card_ictx"></i>
+                                <i class="fab fa-node-js card_ictx"></i>
+                            </div>
+                            <div class="card_btn1">
+                                <button class="card_btn">Edit</button>
+                                <button class="card_btn" id="delete">Delete</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="crd_card" id="hid">
+                    <div class="crd_card" id="hid">
+                        <a href="InProject.html">
+                            <div class="card_div">
+                                <div class="card_div1">
+                                    <img src="../image/photo.jpeg" alt="photo" class="card_div1-img">
+                                </div>
+                                <h1 class="card_h1">Dumbways Mobile App - 2021</h1>
+                                <p class="card_p1">12-2-2000 Sampai 12-2-200</p>
+                                <p class="card_p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores reprehenderit unde, adipisci fuga impedit vero doloremque praesentium rem amet.</p>
+                                <div class="card_ic">
+                                    <i class="fab fa-react card_ictx"></i>
+                                    <i class="fab fa-angular card_ictx"></i>
+                                    <i class="fab fa-vuejs card_ictx"></i>
+                                    <i class="fab fa-node-js card_ictx"></i>
+                                </div>
+                                <div class="card_btn1">
+                                    <button class="card_btn">Edit</button>
+                                    <button class="card_btn" id="delete">Delete</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="crd_card" id="hid">
+                    <div class="crd_card" id="hid">
+                        <a href="InProject.html">
+                            <div class="card_div">
+                                <div class="card_div1">
+                                    <img src="../image/photo.jpeg" alt="photo" class="card_div1-img">
+                                </div>
+                                <h1 class="card_h1">Dumbways Mobile App - 2021</h1>
+                                <p class="card_p1">12-2-2000 Sampai 12-2-200</p>
+                                <p class="card_p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores reprehenderit unde, adipisci fuga impedit vero doloremque praesentium rem amet.</p>
+                                <div class="card_ic">
+                                    <i class="fab fa-react card_ictx"></i>
+                                    <i class="fab fa-angular card_ictx"></i>
+                                    <i class="fab fa-vuejs card_ictx"></i>
+                                    <i class="fab fa-node-js card_ictx"></i>
+                                </div>
+                                <div class="card_btn1">
+                                    <button class="card_btn">Edit</button>
+                                    <button class="card_btn" id="delete">Delete</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!--/MY PROJECT-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/darkmode.js"></script>
+    <script src="../bootstrap/"></script>
+    
+</body>
+</html>

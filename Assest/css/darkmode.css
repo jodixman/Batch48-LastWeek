@@ -1,0 +1,41 @@
+/* Dark Mode Styles */
+.dark-mode {
+  --bg-primary: #111626;
+  --bg-secondary: #1f2937;
+  --text-primary: #fff;
+  --text-secondary: #d1d5db;
+}
+
+.cr,
+body.dark-mode {
+  background-color: var(--bg-primary);
+}
+
+.r,
+h1.dark-mode {
+  color: var(--text-primary);
+}
+
+.navbar.dark-mode {
+  background-color: var(--bg-secondary);
+}
+
+.navbar.dark-mode .navbar-logo i {
+  color: var(--text-primary);
+}
+
+.navbar.dark-mode .navbar-links li a {
+  color: var(--text-primary);
+}
+
+button.dark-mode {
+  background-color: #fff;
+  color: #111626;
+}
+
+button.dark-mode:hover {
+  background-color: #111626;
+  color: #fff;
+}
+
+/* Add more CSS rules for other elements */

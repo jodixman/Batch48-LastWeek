@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0d992eb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Assest/css/style.css">
+    <link rel="stylesheet" href="../Assest/css/darkmode.css">
+    <link rel="stylesheet" href="../Assest/css/responsive.css">
+    <link rel="stylesheet" href="../Assest/css/golang.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="body1 dark-mode">
+    <nav class="header px-5">
+        <div class="header_grp">
+            <div class="header_lft">
+                <img src="../Assest/image/logoDmb.png" class="header_lft-img" alt="Logo" />
+                <a href="/" class="header_lft-h1 hidden md:flex">Home</a>
+                <a href="/project" class="header_lft-p hidden md:flex">My Project</a>
+                <a href="/testimonial" class="header_lft-p hidden md:flex">Testimonal</a>
+                <a href="/bootstrap" class="header_lft-p hidden md:flex text-[#7231F9] font-bold pl-10">BOOTSTRAP</a>
+            </div>
+    
+            <div class="header_grp2">
+                <span class="navbar-logo "><i class="fas fa-moon"></i></span>
+                <a href="/form-register" class="header_lft-h1 hidden md:flex  ">Register </a>
+                <h1 class=" hidden md:flex text-black"> | </h1>
+                <a href="/form-login" class="header_lft-h1 hidden md:flex">Login</a>
+                
+                <a href="/contact" class="header_left-a hidden md:flex">Contact Me</a> 
+                  
+                <i class="fa-solid fa-bars toggle-menu cursor-pointer text-4xl md:hidden"></i>
+
+            </div>
+        </div>
+    </nav>
+
+    <!---- BURGER ----->
+    <div class="burger merah ">
+        <ul class="burger_ul ">
+            <li class="burger_li"><a href="/">Home</a></li>
+            <li class="burger_li"><a href="/project">My Project</a></li>
+            <li class="burger_li"><a href="/contact">Contact</a></li>
+            <li class="burger_li"><a href="/testimonial">Terimonials</a></li>
+            <li class="burger_li text-[#7231F9] font-bold "><a href="/bootstrap">BOOTSTRAP</a></li>
+            
+        </ul>
+    </div>
+
+        <!------------- ALERTT START ------------->
+        {{if .Flash.FlashMessage}}
+        {{if .Flash.FlashStatus}}
+            <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md  absolute -translate-x-1/2 left-1/2" role="alert">
+                <div class="flex">
+                    <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                    <div>
+                        <p class="font-bold mr-10">{{.Flash.FlashMessage}}</p>
+                    </div>
+                    <button id="close-success" class="ml-auto px-2 text-4xl font-bold">&times;</button>
+                </div>
+            </div>
+        {{else}}
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded absolute -translate-x-1/2 left-1/2" role="alert">
+                <div class="flex ">
+                    <strong class="font-bold mr-10">{{.Flash.FlashMessage}}</strong>
+                    <button id="close-error" class="ml-auto px-2   text-xl font-bold ">&times;</button>
+                </div>
+            </div>
+        {{end}}
+    {{end}}
+    
+        <!------------- ALERTT END ------------->
+
+
+
+    
+    <div class="hero md:flex md:flex-row ">
+        <div class=" hero_conta ">
+            <h1 class="hero_conta-h1">Hi Welcome to my hut</h1>
+            <p class="hero_conta-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident possimus quidem dolore rerum, est vitae dicta dignissimos, aperiam reprehenderit fugiat odio iusto totam praesentium officia tempore pariatur corporis, dolores nisi et? Deserunt, quo. Molestias ipsam velit fugiat inventore accusamus. Accusantium aliquid iste sint quae cum eum reprehenderit, ab, earum veniam debitis expedita perferendis odio ex. Quaerat ullam doloremque iste corrupti.</p>
+            <div class="hero_conti">
+                <a href="contact.html" class="hero_contia">contact</a>
+        
+                <div href="" class="home_a1">
+                    <a class="home_a1p">download CV</a>
+                    <i class="fa-solid fa-download home_a1i"></i>
+                </div>    
+            </div>
+    
+            <!--- Icons --->
+            <div class="icons_container">
+                <div class="rounded_icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="rounded_icon"><i class="fa-brands fa-instagram "></i></div>
+                <div class="rounded_icon1"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="rounded_icon"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+
+
+            <table class="border-collapse border border-black border-2 text-center">
+                <thead>
+                  <tr >
+                    <th class="border border-slate-600 border-2 px-6">Experience</th>
+                    <th class="border border-slate-600 border-2 px-10">Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {{ range $index, $userExp := .User.Experience }}
+                  <tr>
+                    <td class="border border-slate-700 border-2">{{$userExp}}</td>
+                    <td class="border border-slate-700 border-2">{{index $.User.Year $index}}</td>
+                  </tr>
+                  {{ end }}
+                </tbody>
+              </table>
+        </div>
+    <!--- Card --->
+    <div class="card">
+        <div class="card_image">
+            <image src="../Assest/image/cv.jpg" class="card_image-img">
+        </div>
+        <div class="card_p">
+            <h1 >{{.User.Name}}</h1>
+            <p class="font-bold">Fullstack Developer</p>
+        </div>
+    </div>
+
+
+    
+    </div>
+    
+
+    <script src="../Assest/js/darkmode.js"></script>
+    <script src="../Assest/js/responsive.js"></script>
+    <script src="../Assest/js/Golang.js"></script>
+</body>
+</html>
